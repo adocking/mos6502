@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run MOS6502 demo",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/mos6502_demo",
+      "args": [
+        "a.sid"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "targetArchitecture": "arm64",
+      "preLaunchTask": "Build demo",
+      "logging": {
+        "engineLogging": false,
+        "trace": false,
+        "traceResponse": false
+      }
+    },
+    {
+      "name": "Debug MOS6502 demo",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/mos6502_demo",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "targetArchitecture": "arm64",
+      "preLaunchTask": "Build demo",
+      "logging": {
+        "engineLogging": false,
+        "trace": false,
+        "traceResponse": false
+      }
+    }
+  ]
+}
